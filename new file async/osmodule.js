@@ -1,0 +1,14 @@
+const csos=require("os"); 
+// console.log(csos.arch());
+// console.log(csos.cpus());
+// console.log(csos.endianness());
+// console.log(csos.freemem());
+// console.log(csos.getPriority());
+// console.log(csos.hostname());
+// console.log(csos.homedir());
+// console.log(csos.type());
+// console.log(csos.platform());
+const memo=csos.totalmem;
+console.log(`${memo/1024/1024/1024}`);
+const mem=csos.freemem();
+console.log(`${mem/1024/1024/1024}`);
